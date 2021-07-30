@@ -1,0 +1,6 @@
+# Command logfile created by Lynx 2.8.6rel.5 (09 May 2007)
+# Arg0 = lynx
+# Arg1 = -cmd_log=./importMember.lynx
+# Arg2 = http://192.168.111.212/batch/importMember.php?username=jeffsaunders&fundsOnly=yes&skipStats=yes
+key q
+key y

@@ -1,0 +1,199 @@
+<?php
+/*
+This include processes the returned XML for the tradesForPosition method (tradeProcessing API).
+Called from daemons/includes/resultsProcessing.php
+
+Example source:
+<results>
+   <method>tradesForPosition</method>
+   <trans_ID>0</trans_ID>
+   <fund_ID>999-1</fund_ID>
+   <startDate>20150101</startDate>
+   <stockSymbol>DIS</stockSymbol>
+   <trade>
+      <opened>20150923</opened>
+      <openedTime>14:51:08</openedTime>
+      <closed>20150923</closed>
+      <closedTime>13:11:35</closedTime>
+      <sharesOrdered>68.0</sharesOrdered>
+      <sharesFilled>68.0</sharesFilled>
+      <price>102.27</price>
+      <limit />
+      <createdByCA>0</createdByCA>
+      <net>6954.36</net>
+      <secFee>0.0</secFee>
+      <commission>3.4</commission>
+      <buyOrSell>Buy</buyOrSell>
+      <dayOrGTC>Day</dayOrGTC>
+      <ticketStatus>closed</ticketStatus>
+      <ticketKey>08B800E856022623C0A86FA6</ticketKey>
+      <comment />
+   </trade>
+   <trade>
+      <opened>20150923</opened>
+      <openedTime>14:51:08</openedTime>
+      <closed>20150923</closed>
+      <closedTime>13:11:35</closedTime>
+      <sharesOrdered>557.0</sharesOrdered>
+      <sharesFilled>557.0</sharesFilled>
+      <price>102.03</price>
+      <limit />
+      <createdByCA>0</createdByCA>
+      <net>56830.71</net>
+      <secFee>0.0</secFee>
+      <commission>27.85</commission>
+      <buyOrSell>Buy</buyOrSell>
+      <dayOrGTC>Day</dayOrGTC>
+      <ticketStatus>closed</ticketStatus>
+      <ticketKey>619C010A5602B3A8C0A86FA6</ticketKey>
+      <comment />
+   </trade>
+</results>
+
+*/
+
+						// Set main level vars
+						$transID		= $xml->trans_ID;
+						$fundID			= $xml->fund_ID;
+						$startDate		= $xml->startDate;
+						$stockSymbol	= $xml->stockSymbol;
+						$aTrades		= $xml->trade;
+						$aContents		= explode("?>", $contents);
+
+						// Delete all the existing records after the passed start date - we are replacing them with fresh ones
+						$query = "
+							DELETE FROM ".$fund_trades_table."
+							WHERE fund_id = :fund_id
+							AND stockSymbol = :stockSymbol
+							AND unix_opened >= :startDate
+						";
+						try{
+							$rsDelete = $mLink->prepare($query);
+							$aValues = array(
+								':fund_id'		=> $fundID,
+								':stockSymbol'	=> $stockSymbol,
+								':startDate'	=> mktime(5, 0, 0, substr($startDate, 4, 2), substr($startDate, 6, 2), substr($startDate, 0, 4))
+							);
+							$preparedQuery = str_replace(array_keys($aValues), array_values($aValues), $query); //Debug
+							//echo $preparedQuery."\n";
+							$rsDelete->execute($aValues);
+						}
+
+						catch(PDOException $error){
+							// Log any error
+							file_put_contents($pdo_log, "-----\rDate: ".date('Y-m-d H:i:s')."\rFile: ". __FILE__ ."\rLine Number: ". __LINE__ ."\rVars:\r".dump_vars(get_defined_vars())."\r", FILE_APPEND);
+						}
+
+						// loop through each trade and assign values
+						foreach($aTrades as $key=>$trade){
+
+							// Set trade level vars
+							$opened			= $trade->opened;
+							$openedTime		= $trade->openedTime;
+//							$unix_opened	= mktime(5, 0, 0, substr($opened, 4, 2), substr($opened, 6, 2), substr($opened, 0, 4));
+							$unix_opened	= mktime(substr($openedTime, 0, 2), substr($openedTime, 3, 2), substr($openedTime, 6, 2), substr($opened, 4, 2), substr($opened, 6, 2), substr($opened, 0, 4));
+							$closed			= $trade->closed;
+							$closedTime		= $trade->closedTime;
+//							$unix_closed	= mktime(5, 0, 0, substr($closed, 4, 2), substr($closed, 6, 2), substr($closed, 0, 4));
+							$unix_closed	= mktime(substr($closedTime, 0, 2), substr($closedTime, 3, 2), substr($closedTime, 6, 2), substr($closed, 4, 2), substr($closed, 6, 2), substr($closed, 0, 4));
+							$sharesOrdered	= $trade->sharesOrdered;
+							$sharesFilled	= $trade->sharesFilled;
+							$price			= $trade->price;
+							$limit			= $trade->limit;
+							$createdByCA	= $trade->createdByCA;
+							$net			= $trade->net;
+							$secFee			= $trade->secFee;
+							$commission		= $trade->commission;
+							$buyOrSell		= $trade->buyOrSell;
+							$dayOrGTC		= $trade->dayOrGTC;
+							$ticketKey		= $trade->ticketKey;
+							$comment		= rawurldecode($trade->comment);
+
+							// Insert row
+							$query = "
+								INSERT INTO ".$fund_trades_table." (
+									fund_id,
+									timestamp,
+									company_id,
+									stockSymbol,
+									opened,
+									openedTime,
+									unix_opened,
+									closed,
+									closedTime,
+									unix_closed,
+									sharesOrdered,
+									sharesFilled,
+									price,
+									`limit`,
+									dayOrGTC,
+									ticketKey,
+									ticketStatus,
+									createdByCA,
+									net,
+									secFee,
+									commission,
+									buyOrSell,
+									comment
+								)VALUES(
+									:fund_id,
+									UNIX_TIMESTAMP(),
+									0,
+									:stockSymbol,
+									:opened,
+									:openedTime,
+									:unix_opened,
+									:closed,
+									:closedTime,
+									:unix_closed,
+									:sharesOrdered,
+									:sharesFilled,
+									:price,
+									:limit,
+									:dayOrGTC,
+									:ticketKey,
+									'closed',
+									:createdByCA,
+									:net,
+									:secFee,
+									:commission,
+									:buyOrSell,
+									:comment
+								)
+							";
+							try{
+								$rsInsert = $mLink->prepare($query);
+								$aValues = array(
+									':fund_id'			=> $fundID,
+									':stockSymbol'		=> $stockSymbol,
+									':opened'			=> $opened,
+									':openedTime'		=> $openedTime,
+									':unix_opened'		=> $unix_opened,
+									':closed'			=> $closed,
+									':closedTime'		=> $closedTime,
+									':unix_closed'		=> $unix_closed,
+									':sharesOrdered'	=> $sharesOrdered,
+									':sharesFilled'		=> $sharesFilled,
+									':price'			=> $price,
+									':limit'			=> $limit,
+									':dayOrGTC'			=> $dayOrGTC,
+									':ticketKey'		=> $ticketKey,
+									':createdByCA'		=> $createdByCA,
+									':net'				=> $net,
+									':secFee'			=> $secFee,
+									':commission'		=> $commission,
+									':buyOrSell'		=> $buyOrSell,
+									':comment'			=> $comment
+
+								);
+								$preparedQuery = str_replace(array_keys($aValues), array_values($aValues), $query); //Debug
+								//echo $preparedQuery."\n";
+								$rsInsert->execute($aValues);
+							}
+							catch(PDOException $error){
+								// Log any error
+								file_put_contents($pdo_log, "-----\rDate: ".date('Y-m-d H:i:s')."\rFile: ". __FILE__ ."\rLine Number: ". __LINE__ ."\rVars:\r".dump_vars(get_defined_vars())."\r", FILE_APPEND);
+							}
+
+						} // End loop for $aTrades
+?>

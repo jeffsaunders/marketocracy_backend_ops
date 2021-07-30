@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<head>
+<head>
+    <title>Marketocracy</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://kit.fontawesome.com/235c17322e.js"></script>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+    <!-- Header -->
+<header id="header">
+    <a href="/" class="logo"><strong>Marketocracy</strong></a>
+    <ul class="icons">
+        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
+    </ul>
+</header>
+            <!-- Banner -->
+                <section id="banner">
+        <div class="content">
+
+                <header>
+                    <h1>Small Steps Can Make You A Millionaire</h1>
+                    <p>Without Taking Much Time And At Almost No Cost</p>
+                </header>
+
+
+                    <img class="image right"
+                               src="/images/logan-isbell-672551-square-unsplash.jpg" alt="" /> </header>
+
+
+            <p>You don't need to pay a broker, banker, or advisor to get started. You don't even need to research any stocks. </p>
+            <p>Open an account with Fidelity and put $200 in the Fidelity 500 Index fund (FXAIX). There is no minimum initial investment and fees are a very modest 0.02% a year which works out to $0.20 per $1,000 per year. You can deposit $200 each month with no transaction fees.</p>
+
+            <h3>Why This Fund?</h3>
+
+            <p>Lets divide all of the risks investors face into two buckets -- market risks, and company risks.</p>
+
+            <p>Market risks are everything that a company has no control over such as monetary and fiscal policy. Company risks are everything that a company can do that affects its stock price such as launching a new product or reducing costs that has little impact on other companies.</p>
+
+            <p>When you invest in an index fund like this one, you own so many stocks that you are effectively insulated from company risk. Since you don't have to research any stocks, this plan will not take much of your time. Your return depends on how well the economy does and not on whether any company succeeds.</p>
+
+            <p>By investing in this fund, you protect yourself from a whole category of risk and eliminate the need to research any stocks at almost no cost. This is a good deal!</p>
+
+            <h3>Becoming A Millionaire</h3>
+
+            <p>According to the Securities and Exchange Commission's <a href="https://www.investor.gov/additional-resources/free-financial-planning-tools/compound-interest-calculator">compound interest calculator</a> if you do this for 40 years you will have invested a total of $96,200 which will be worth $1,071,274 assuming the stock market performs pretty much the same as it has over the long-term. Sticking with this investment plan will probably make you a millionaire.</p>
+
+            <p>Compounding is the miracle force of nature that enables everyone to become wealthy within their lifetime. The sooner you start investing, the sooner this miracle starts working for you.</p>
+
+            <h3>Finding $200 a Month</h3>
+
+            <p>The first place I suggest you look is your employer's retirement plan options. Many employers will match your contribution so you may only have to contribute $100 a month towards becoming a millionaire. </p>
+
+            <p>I used to spend $100 a month to buy coffee each morning on my way to work. When I realized this money, when matched with my employer's 401k plan, could make me a millionaire, I started making my own coffee. It was a painless way to start down the road to financial freedom so I would not have to  work my whole life. I figured that if becoming wealthy was less important than having a daily cup of premium priced coffee, I would never become wealthy.</p>
+
+            <p>This does not mean you have to stay with your current employer for the next 40 years. When you change jobs, you can take your retirement account with you.</p>
+
+            <p>Stick with this plan at least until your portfolio has grown to $20,000. At that point, there are other investing approaches worth your consideration. </p>
+
+<p><i>Note: I have no affiliation with Fidelity other than being a satisfied customer. </i></p>
+
+
+
+        </div>
+
+    </section>
+            <!-- Section -->
+
+                            <section>
+                    <header class="major">
+                        <h2>What's Next</h2>
+                    </header>
+                    <div class="features">
+                        <article>
+                            <span class="icon fa-thumbs-up"></span>
+                            <div class="content">
+                                <h3>I'm Ready To Start</h3>
+                                <p>To open an account at Fidelity <a href="https://www.fidelity.com/">click here.</a></p>
+                                <ul class="actions">
+
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article>
+                            <span class="icon fa-black-tie"></span>
+                            <div class="content">
+                                <h3>What Happens When I Reach $20,000</h3>
+                                <p>Contact me if you would like to discuss your situation. <a href="https://marketocracy.setmore.com/resourcebookingpage/r2f301448389596528">Make An Appointment</a> or <a href="mailto:ken.kam@marketocracy.net">Email</a></p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <span class="icon fa-graduation-cap"></span>
+                            <div class="content">
+                                <h3>I Want To Learn</h3>
+                                <p>The best way to learn to invest. <a href="#">More</a></p>
+                                <ul class="actions">
+
+                                </ul>
+                            </div>
+                        </article>
+                        <article>
+                            <span class="icon fa-chart-line"></span>
+                            <div class="content">
+                                <h3>Is This A Good Time To Invest</h3>
+                                <p>Make lots of small steps in the right direction.<a href="#">More</a></p>
+                                <ul class="actions">
+
+                                </ul>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+            
+            <!-- Section -->
+                               </div>
+    </div>
+
+
+
+    <!-- Sidebar -->
+            <div id="sidebar">
+    <div class="inner">
+
+        <!-- Search -->
+        <section id="search" class="alt">
+            <form method="post" action="#">
+                <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+        </section>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <header class="major">
+                <h2>Menu</h2>
+            </header>
+            <ul>
+                <li><a href="/">Homepage</a></li>
+                <li>
+                    <span class="opener">What's On Your Mind</span>
+                    <ul>
+                        <li><a href="/startsmall">Just Starting Out</a></li>
+                        <li><a href="#">Working Like A Dog</a></li>
+                        <li><a href="#">Retired Or Nearly So</a></li>
+                        <li><a href="#">My Legacy</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="opener">Investment Approaches</span>
+                    <ul>
+                        <li><a href="#">Investing In Markets</a></li>
+                        <li><a href="#">Investing In Companies</a></li>
+                        <li><a href="#">Investing In Managers</a></li>
+                        <li><a href="#">A Smart Approach</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="opener">Forbes Article Series</span>
+                    <ul>
+                        <li><a href="#">Getting Back On Track</a></li>
+                        <li><a href="#">The Greatest Fund Managers</a></li>
+                        <li><a href="#">Stocks We Cover</a></li>
+                        <li><a href="#">Learning To Invest</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="generic.html">Market Outlook</a></li>
+                <li><a href="elements.html">Who Is Ken Kam</a></li>
+
+
+            </ul>
+        </nav>
+
+        <!-- Section -->
+        <section>
+            <header class="major">
+                <h2>Forbes Article Series</h2>
+            </header>
+            <div class="mini-posts">
+                <article>
+                    <a href="#" class="image"><img src="/images/andrea-boldizsar-228-unsplash.jpg" alt="" /></a>
+                    <p>Getting Back On Track</p>
+                </article>
+                <article>
+                    <a href="#" class="image"><img src="/images/fauzan-saari-687564-unsplash.jpg" alt="" /></a>
+                    <p>The Greatest Fund Managers</p>
+                </article>
+                <article>
+                    <a href="#" class="image"><img src="/images/william-hook-476194-unsplash.jpg" alt="" /></a>
+                    <p>Stocks We Cover</p>
+                </article>
+                <article>
+                    <a href="#" class="image"><img src="/images/85fifteen-323874-unsplash.jpg" alt="" /></a>
+                    <p>Learning To Invest</p>
+                </article>
+            </div>
+        </section>
+                 <section>
+    <header class="major">
+        <h2>Get In Touch</h2>
+    </header>
+    <p>To discuss your specific situation with Ken Kam.</p>
+    <ul class="contact">
+        <li class="fa-calendar-check-o"><a href="https://marketocracy.setmore.com/resourcebookingpage/r2f301448389596528">Make An Appointment</a></li>
+        <li class="fa-envelope-o"><a href="mailto:ken.kam@marketocracy.net">ken.kam@marketocracy.net</a></li>
+
+
+    </ul>
+</section>             <!-- Footer -->
+                        <footer id="footer"> <p class="copyright">&copy; Marketocracy, Inc. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+</footer>         </div>
+    </div>
+
+</div>
+
+ <!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script> </body>
+
+</html>

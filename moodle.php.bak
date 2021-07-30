@@ -1,0 +1,51 @@
+<?php
+
+//echo password_hash("Marketocracy1!", PASSWORD_BCRYPT);die();
+//exec("curl -c /tmp/cookies -v -L --user admin:Hawaii50! http://moodle.marketocracy.com");
+//header("Location: http://moodle.marketocracy.com");
+
+
+$username = stripslashes($_GET['username']);
+//$username = "admin";
+$password = stripslashes($_GET['password']);
+//$password = "Hawaii50!";
+
+# http://192.168.111.215/moodle.php?username=jeffsaunders&password=n0thing!
+
+/*
+<form action="http://moodle.marketocracy.com/login/index.php" method="post" name="login" id="form">
+
+<p><input type="text" name="username" value="<?php echo $username ?>">
+
+<p><input type="hidden" name="password" value="<?php echo $password ?>">
+
+<script language="JavaScript">
+
+function Validate()
+
+{
+
+document.login.submit();
+
+}
+
+Validate();
+
+</script>
+
+</form>';
+*/
+?>
+
+<form action="http://moodle.marketocracy.com/login/index.php" method="post" name="login" id="form">
+<input type="hidden" name="username" value="<?php echo $username ?>">
+<input type="hidden" name="password" value="<?php echo $password ?>">
+
+<script language="JavaScript">
+function Validate(){
+	document.login.submit();
+}
+Validate();
+</script>
+
+</form>';

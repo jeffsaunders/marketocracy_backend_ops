@@ -1,0 +1,35 @@
+<?php
+//Set Database Variables
+
+class databaseLibrary {
+    var $dbHost;
+    var $dbName;
+    var $dbUser;
+    var $dbPass;
+    var $stLink;
+
+    public function __construct() {
+
+    $dbHost = "192.168.111.211";
+    $dbName = "stock";
+    $dbUser = "marketocracy";
+    $dbPass = "KfabyZcbE3";
+    //Connect to portfolio DB / MySQL with PDO_MYSQL
+    try{
+            $this->stLink = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass);
+            $this->stLink->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+    }
+    catch(PDOException $error){
+            // Log any error to /var/log/httpd/redshift-pdo_log
+#            file_put_contents("/var/log/httpd/redshift-pdo_log", "-----\rDate: ".date('Y-m-d H:i:s')."\rFile: ". __FILE__ ."\rLine Number: ". __LINE__ ."\rVars:\r".dump_vars(get_defined_vars())."\r", FILE_APPEND);
+            die($error->getMessage());
+    }
+
+}
+    public function get_stLink() {
+        return $this->stLink;
+    }
+}
+?>
+
+

@@ -1,0 +1,1 @@
+Server-side scripts controlling the acquisition and manipulation of feed data, billing, ranking, reporting, and other back-end operations, including a custom-build bi-directional API for passing data back and forth between this system and an Apple OSX based precursor system. 

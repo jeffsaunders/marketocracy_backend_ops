@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<head>
+<head>
+    <title>Marketocracy</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://kit.fontawesome.com/235c17322e.js"></script>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+    <!-- Header -->
+<header id="header">
+    <a href="/" class="logo"><strong>Marketocracy</strong></a>
+    <ul class="icons">
+        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
+    </ul>
+</header>
+            <!-- Banner -->
+                <section id="banner">
+        <div class="content">
+
+                <header>
+                    <h1>Smart Investing To Create Wealth</h1>
+                    <p>Start At Any Age Without Taking Big Risks</p>
+                </header>
+
+
+                    <img class="image right"
+                               src="/images/bruce-mars-763659-square-unsplash.jpg" alt="" /> </header>
+
+
+
+
+                <p>The stock market has made millionaires out of anyone who invested as little as $200 a month over the last 40 years. You didn't have to win the lottery. You didn't have to ask for favors. You didn't even have to know the right people. Becoming≥ wealthy was within everyone's reach and the future looks even brighter. Starting at any age, and without taking big risks, a smart investment approach can make you wealthy!</p>
+
+                <p>Over the last 40 years, stocks have gained almost 10% a year, 7% after inflation while real wages have barely budged.  Becoming wealthy has more to do with how hard your money works than how hard you work.</p>
+
+
+            <p>If you had put $200 into the S&amp;P 500 index 40 years ago, and contributed $200 a month, your account would be worth over $1 million today.</p>
+
+            <h3>But Aren&rsquo;t Stocks Risky?</h3>
+
+            <p>While 10% is the market's average annual return for the last 40 years, there was one year when the market lost 43%! This occurred over the twelve months ending in February 2009. </p>
+
+            <p>Many people never start investing because they are afraid of losing money. There are two ways to manage it.</p>
+
+            <p><a href="https://www.thebalance.com/rolling-index-returns-1973-mid-2009-4061795">In The Best And Worst Rolling Index Returns 1973-2016</a>, Dana Anspach shows how the risk of losing money gets smaller as your time horizon increases. If you had invested on the absolute worst day (in the last 40 years) you would have lost 43% one year later. However, after five years, the loss would have shrunk to 7%. If you had invested for 15 years on the worst possible day you would have had a positive return of almost 4% a year.</p>
+            <figure class="figure">
+            <img class="figure-img w-50" src="/images/SP500.png" alt="" />
+            <figcaption class="figure-caption text-right">Source: TheBalance.com / Dana Anspach</figcaption>
+            </figure>
+            <br>
+            <p>The first way to reduce the risk of losing money is to invest for a long time. If you can stomach a 43% loss, it's ok to invest one year at a time. If you can live with a 7% loss, plan on investing for 5 years. There is no doubt that the future will be different than the past, but these numbers give you a good sense of the tradeoff between the risk of losing money and the length of your investment horizon.</p>
+
+            <p>The second way to manage risk is to make many small investments rather than one big one. If you happened to start putting $200 a month into the market on the worst possible day in the last 40 years you would have lost 43% or $86 on your first investment after a year. It's a big percentage loss, but not a lot of money. All the other deposits would have done better. The lesson is don't wait for the perfect time to make a big investment. Making lots of small investments is easier than than trying to pick the best time to jump into the market with a lot of money. </p>
+
+            <p>The two tools you have to manage risk are time horizon and investment size. The thing about time, however, is you will never have as much as you have right now. You can't buy more of it and you can't get any wasted time back. The sooner you invest, the more confident you can be that you won't lose money. Start now with whatever amount you can, make small regular deposits, and make your money work as hard as you do to create wealth. </p>
+
+
+        </div>
+
+    </section>
+            <!-- Section -->
+
+                            <section>
+                    <header class="major">
+                        <h2>What's Next</h2>
+                    </header>
+                    <div class="features">
+                        <article>
+                            <span class="icon fa-lightbulb-o"></span>
+                            <div class="content">
+                                <h3>I Want To Start Small</h3>
+                                <p>What is the smallest amount I can start with and best way to invest it. <a href="/startsmall">More</a></p>
+                            </div>
+                        </article>
+                        <article>
+                            <span class="icon fa-black-tie"></span>
+                            <div class="content">
+                                <h3>I Can Start With $20,000</h3>
+                                <p>At this point, you have some choices. Contact me if you would like to discuss your situation. <a href="#">More</a></p>
+                                <ul class="actions">
+
+                                </ul>
+                            </div>
+                        </article>
+                        <article>
+                            <span class="icon fa-graduation-cap"></span>
+                            <div class="content">
+                                <h3>I Want To Learn More</h3>
+                                <p>3 smart investment approaches to consider.<a href="#">More</a></p>
+                                <ul class="actions">
+
+                                </ul>
+                            </div>
+                        </article>
+                        <article>
+                            <span class="icon fa-chart-line"></span>
+                            <div class="content">
+                                <h3>Is This A Good Time To Invest</h3>
+                                <p>Make lots of small steps in the right direction.<a href="#">More</a></p>
+                                <ul class="actions">
+
+                                </ul>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+            
+            <!-- Section -->
+                               </div>
+    </div>
+
+
+
+    <!-- Sidebar -->
+            <div id="sidebar">
+    <div class="inner">
+
+        <!-- Search -->
+        <section id="search" class="alt">
+            <form method="post" action="#">
+                <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+        </section>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <header class="major">
+                <h2>Menu</h2>
+            </header>
+            <ul>
+                <li><a href="/">Homepage</a></li>
+                <li>
+                    <span class="opener">What's On Your Mind</span>
+                    <ul>
+                        <li><a href="/startsmall">Just Starting Out</a></li>
+                        <li><a href="#">Working Like A Dog</a></li>
+                        <li><a href="#">Retired Or Nearly So</a></li>
+                        <li><a href="#">My Legacy</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="opener">Investment Approaches</span>
+                    <ul>
+                        <li><a href="#">Investing In Markets</a></li>
+                        <li><a href="#">Investing In Companies</a></li>
+                        <li><a href="#">Investing In Managers</a></li>
+                        <li><a href="#">A Smart Approach</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="opener">Forbes Article Series</span>
+                    <ul>
+                        <li><a href="#">Getting Back On Track</a></li>
+                        <li><a href="#">The Greatest Fund Managers</a></li>
+                        <li><a href="#">Stocks We Cover</a></li>
+                        <li><a href="#">Learning To Invest</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="generic.html">Market Outlook</a></li>
+                <li><a href="elements.html">Who Is Ken Kam</a></li>
+
+
+            </ul>
+        </nav>
+
+        <!-- Section -->
+        <section>
+            <header class="major">
+                <h2>Forbes Article Series</h2>
+            </header>
+            <div class="mini-posts">
+                <article>
+                    <a href="#" class="image"><img src="/images/andrea-boldizsar-228-unsplash.jpg" alt="" /></a>
+                    <p>Getting Back On Track</p>
+                </article>
+                <article>
+                    <a href="#" class="image"><img src="/images/fauzan-saari-687564-unsplash.jpg" alt="" /></a>
+                    <p>The Greatest Fund Managers</p>
+                </article>
+                <article>
+                    <a href="#" class="image"><img src="/images/william-hook-476194-unsplash.jpg" alt="" /></a>
+                    <p>Stocks We Cover</p>
+                </article>
+                <article>
+                    <a href="#" class="image"><img src="/images/85fifteen-323874-unsplash.jpg" alt="" /></a>
+                    <p>Learning To Invest</p>
+                </article>
+            </div>
+        </section>
+                 <section>
+    <header class="major">
+        <h2>Get In Touch</h2>
+    </header>
+    <p>To discuss your specific situation with Ken Kam.</p>
+    <ul class="contact">
+        <li class="fa-calendar-check-o"><a href="https://marketocracy.setmore.com/resourcebookingpage/r2f301448389596528">Make An Appointment</a></li>
+        <li class="fa-envelope-o"><a href="mailto:ken.kam@marketocracy.net">ken.kam@marketocracy.net</a></li>
+
+
+    </ul>
+</section>             <!-- Footer -->
+                        <footer id="footer"> <p class="copyright">&copy; Marketocracy, Inc. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+</footer>         </div>
+    </div>
+
+</div>
+
+ <!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script> </body>
+
+</html>
