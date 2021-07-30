@@ -15,7 +15,7 @@ ini_set('display_errors', '1');
 require("/var/www/html/includes/systemDebugFunctions.php");
 
 // Encryption functions
-function encrypt($value, $key='SGFwcHkgQmlydGhkYXkgUmFjaGVsIQ=='){
+function encrypt($value, $key='<key>'){
 	if(!$value || !$key){
 		return false;
 	}
@@ -28,7 +28,7 @@ function encrypt($value, $key='SGFwcHkgQmlydGhkYXkgUmFjaGVsIQ=='){
 	return base64_encode( $encryptedValue );
 }
 
-function double_encrypt($value, $key='fhPXaYlnraw4aN6mOVOfOXPdEtVQGZml'){
+function double_encrypt($value, $key='<doubleKey>'){
 	if(!$value || !$key){
 		return false;
 	}
